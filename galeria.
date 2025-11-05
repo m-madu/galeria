@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meu site</title>
+    <style>
+        
+        *{
+            
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .caixa {
+            width: 1240px;
+            margin: 0 auto;
+            
+        }
+        .camera{
+            height: 27.5px;
+            width: 30px;
+            
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            
+            
+            
+        }
+         .b{
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            
+
+            
+        }
+        .pesquisa{
+            height: 45px;
+            background: grey;
+            opacity: 56%;
+            border-radius: 5;
+            padding: 0 10px;
+            width: 1000px;
+            align-items: center;
+            display: flex;
+
+        }
+        .b2{
+            color: white;
+        }
+        .camera2{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+        .img{
+            width: 390px;
+            height: 194px;
+        }
+        .container2{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            row-gap: 15px;
+            justify-content: space-between;
+            
+        }
+        .t{
+            display: flex;
+            justify-content: center;
+        }
+        .t p {
+            
+            width: fit-content;
+            padding:  10px;
+        }
+        .background{
+            background-color: rgba(194, 188, 188, 0.726);
+            
+        }
+
+        .card {
+            background: white;
+            width: 400px
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .card .tag {
+            
+            color: black;
+            padding: 5px;
+            border-radius: 10px;
+            width: fit-content;
+        }
+        .titulo{
+            display: flex;
+            padding: 0 170px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container caixa">
+        <img class="camera" src="camera.png" alt="logo">
+        <ul class="b">
+            <li >home</li>
+            <li >galeria</li>
+        </ul>
+        <div class="pesquisa">
+            <p class="b2">Pesquise por imagens ou coleções</p>
+        </div>
+        <img class="camera2" src="im.g.jpg" alt="logo">
+    </div>
+    <div class="background">
+        <h1 class="titulo">Galeria</h1>
+        <div class="container2 caixa">
+            
+            <div class="card">
+                <img class="img" src="im1.jpg.jpg" alt="">
+                <p>Workspace elétrica</p>
+                <p class="tag">tag</p>
+            </div>
+            <div class="card">
+                <img class="img" src="im2.jpg" alt="">
+                <p>Dark and red</p>
+                <p class="tag">tag</p>
+            </div>
+            <div class="card">
+                <img class="img" src="im3.jpg" alt="">
+                <p>Organização e grids</p>
+                <p class="tag">tag</p>
+            </div>
+            
+            <div class="card">
+                <img class="img" src="im9.jpg" alt="">
+                <p>Colméia</p>
+                <p class="tag">tag</p>
+            </div>
+
+            <div class="card">
+                <img class="img" src="im8.jpg" alt="">
+                <p>Setup de escritor</p>
+                <p class="tag">tag</p>
+            </div>
+
+            <div class="card">
+                <img class="img" src="im7.jpg" alt="">
+                <p>Ergonomia e cores</p>
+                <p class="tag">tag</p>
+            </div>
+            
+            <div class="card">
+                <img class="img" src="im6.jpg" alt="">
+                <p>Show de luzes</p>
+                <p class="tag">tag</p>
+            </div>
+
+            <div class="card">
+                <img class="img" src="im5.jpg" alt="">
+                <p>Deep purple</p>
+                <p class="tag">tag</p>
+            </div>
+
+            <div class="card">
+                <img class="img" src="im4.jpg" alt="">
+                <p>Multi-Screen</p>
+                <p class="tag">tag</p>
+            </div>
+            
+        </div>
+         <br>
+    </div>
+    <div class="t">
+        <p>© 2025 - Web Gallery </p>
+    </div>
+</body>
+</html>
