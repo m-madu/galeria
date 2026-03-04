@@ -1,0 +1,44 @@
+// FUNÇÃO VERIFICAR (Para escrever na DIV e no Console)
+function verificar(nomeDoTeste, condicao) {
+ var p = document.createElement("p");
+
+ if (condicao) {
+    p.innerHTML = "✅ " + nomeDoTeste;
+    p.style.color = "green";
+    console.log("✅ PASSOU: " + nomeDoTeste);
+ } else {
+    p.innerHTML = "❌ " + nomeDoTeste;
+    p.style.color = "red";
+    console.error("❌ FALHOU: " + nomeDoTeste);
+ }
+
+ document.getElementById("relatorio-testes").appendChild(p);
+}
+/* Instruções: Desenvolva a lógica de verificação dentro da função
+abaixo.
+O script deve ser vinculado ao HTML via <script
+src="testes.js"></script>
+*/
+window.onload = function() {
+console.log("--- INICIANDO PROTOCOLO DE TESTES ---");
+// Exemplo de Teste de SEO
+let tituloValido = document.title !== "" && document.title !== "Document";
+verificar("Título da aba está configurado", tituloValido);
+
+// Desenvolva os demais testes abaixo:
+// 1. Teste de H1...
+let H1Valido = document.title !== "" && document.title !== "Document";
+verificar("H1 da aba está configurado", H1Valido);
+
+// 2. Teste de Imagens (Dica: use um loop for ou forEach)...
+const imagens = document.querySelectorAll('img')
+for(let i = 0; i < imagens.length; i++) {
+    verificar("Vericar imgs", imagens[i] !== null);
+}
+
+// 3. Teste de Performance...
+
+verificar('tempo para carregar', performance.now() / 1000 < 2)
+
+console.log("--- FIM DO RELATÓRIO ---");
+};
